@@ -34,3 +34,8 @@ jobs:
           echo exec zsh
           echo pwd
           echo ls -lah
+          
+      - name: Display the path
+        run: |
+          echo $ZSH_NAME $ZSH_VERSION
+        shell: zsh {0}
